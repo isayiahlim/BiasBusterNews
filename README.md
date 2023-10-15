@@ -6,7 +6,7 @@ Thus, it introduces you to news articles and topics that you might not typically
 We believe that well-informed citizens are essential for a thriving democracy, and we're committed to helping you become one. 
 
 ## How to Install + Use
-Download the repository and run website locally (for which you will need a live server), or access it through GitHub pages here - https://isayiahlim.github.io/. You will need an API key from newsapi.org, which you can get for free.
+Download the repository and run website locally (for which you will need a live server), or access it through GitHub pages here - https://isayiahlim.github.io/bootstrap/index.html. You will need an API key from newsapi.org, which you can get for free.
 On the home page, scroll to the slider and slide it to the left or right to describe your political alignment. 
 All news articles will be updated to be personalized to you; continue to explore the website and read articles to bust your biases.
 
