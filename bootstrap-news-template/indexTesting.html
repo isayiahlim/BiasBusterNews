@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title> Display</title>
+
+    </head>
+    <body>
+        <!-- <input type="text" onkeypress="myEvent(event)">
+        <p id="output"></p>
+        <script src="main.js"></script> -->
+        <div class="slidecontainer">
+            <input type="range" id="sliderRating" min="1" max="5" value="3" class="slider" onchange="getArticles(sliderRating.value, 'Science', 'urlToImage', 1)">
+        </div>
+
+        <img id="imageElement" src="" alt="API Image"></img>
+        <script>
+            const API_KEY = "6ce8b0afed704347b0d603cdc9db3e14";
+const map = new Map();
+map.set("1", "msnbc.com, vox.com");
+map.set("2", "cnn.com, npr.org"); //CHECK NPR WORKS
+map.set("3", "forbes.com, wsj.com");
+map.set("4", "nypost.com, washingtonexaminer.com")
+map.set("5", "foxnews.com, thefederalist.com")
+
+async function getArticles(rating, keyWord, returnType, page) {
+var url =
+"https://newsapi.org/v2/everything?" +
+"domains=" +
+map.get(rating) +
+"&pageSize=1" +
+"&sortBy=relevancy" +
+//'&from=' + yyyy + '-' + mm + '-' + dd +
+"&q=" +
+keyWord +
+"&page=" +
+page +
+"&apiKey=" +
+API_KEY;
+
+var req = new Request(url);
+
+const response = await fetch(req);
+
+const data = await response.json();
+
+if (data.articles && data.articles.length > 0) {
+const articleUrls = data.articles.map((article) => article[returnType]);
+const imageElement = document.getElementById('imageElement');
+imageElement.src = articleUrls[0];
+//return articleUrls;
+} else {
+return [];
+}
+}
+        </script>
+    </body>
+</html>
