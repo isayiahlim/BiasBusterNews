@@ -16,6 +16,10 @@ All news articles will update to be personalized to you, continue to explore web
 
 ## Accomplishments
 
+## What We Learned
+
+## Next Steps
+
 ## Technologies Used
 We used HTML, CSS, JS, HTML Codex Template, NewsAPI. 
 We incorporated the NewsAPI to pull news articles from a vast variety of domains. With that data, we sorted the articles based on where they fall on the political spectrum.
