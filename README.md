@@ -1,15 +1,13 @@
-# BiasBusterNewsDubHacks23
-## Inspiration
+# BiasBusterNewsDubHacks23 - Synergy Track
+## Problem Statement
 In a world where echo chambers and polarized opinions can dominate the news landscape, Bias Buster News is a project that aims to promote informed and open-minded citizenship. 
 This news website personalizes the news articles recommended to a reader based on their self-reported political affiliation.
 Thus, it introduces you to news articles and topics that you might not typically explore, fostering a deeper understanding of political landscapes and diverse viewpoints. 
 We believe that well-informed citizens are essential for a thriving democracy, and we're committed to helping you become one. 
 
-## How to Install
-
-
-## How to Use
-Launch the index.html file in a new browser window. Scroll to the slider and slide it to the left or right to describe your political alignment. 
+## How to Install + Use
+Download the repository and run website locally (for which you will need a live server), or access it through GitHub pages here. You will need an API key from newsapi.org, which you can get for free.
+On the home page, scroll to the slider and slide it to the left or right to describe your political alignment. 
 All news articles will be updated to be personalized to you; continue to explore the website and read articles to bust your biases.
 
 ## Challenges
