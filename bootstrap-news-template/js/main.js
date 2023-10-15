@@ -1,52 +1,4 @@
-const API_KEY = "6ce8b0afed704347b0d603cdc9db3e14";
-const map = new Map();
-map.set("-2", "msnbc.com, vox.com");
-map.set("-1", "cnn.com, npr.org"); //CHECK NPR WORKS
-map.set("0", "forbes.com, wsj.com");
-map.set("1", "nypost.com, washingtonexaminer.com")
-map.set("2", "foxnews.com, thefederalist.com")
-
-async function getArticles(rating, keyWord, returnType, page) {
-  var url =
-    "https://newsapi.org/v2/everything?" +
-    "domains=" +
-    map.get(rating) +
-    "&pageSize=1" +
-    "&sortBy=relevancy" +
-    //'&from=' + yyyy + '-' + mm + '-' + dd +
-    "&q=" +
-    keyWord +
-    "&page=" +
-    page +
-    "&apiKey=" +
-    API_KEY;
-
-  var req = new Request(url);
-
-  const response = await fetch(req);
-
-  const data = await response.json();
-
-  if (data.articles && data.articles.length > 0) {
-    const articleUrls = data.articles.map((article) => article[returnType]);
-    const imageElement = document.getElementById('imageElement');
-    imageElement.src = articleUrls[0];
-    //return articleUrls;
-  } else {
-    return [];
-  }
-}
-
-function myEvent() {
-    // var articleImage = getArticles("0", "science", "urlToImage", 1);
-    // var outputElement = document.getElementById("output");
-
-    // outputElement.textContent = "key pressed: " + articleImage[0];
-    const imageURL = getArticles(2, "Science", "urlToImage", 1);
-    
-}
-
-//(function ($) {
+(function ($) {
     "use strict";
     
     // Sticky Navbar
@@ -171,7 +123,5 @@ function myEvent() {
             }
         ]
     });
-    let articles = getArticles("2", "science", "url", 1);
-    console.log(articles);
-//})(jQuery);
+})(jQuery);
 

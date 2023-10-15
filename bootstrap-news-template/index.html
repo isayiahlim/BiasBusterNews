@@ -1,622 +1,1229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Bias Buster News</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="utf-8">
+    <title>Bias Buster News</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <style>
-            .slidecontainer {
-                width: 100%; /* Width of the outside container */
-            }
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-            /* The slider itself */
-            .slider {
-                -webkit-appearance: none;  /* Override default CSS styles */
-                appearance: none;
-                margin-top: 0px;
-                width: 95%; /* Full-width */
-                height: 25px; /* Specified height */
-                background: rgb(75, 116, 219); /* Grey background */
-                opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-                -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-                transition: opacity .2s;
-            }
-            .slider::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 25px;
-                height: 35px;
-                background: #c8cc61;
-                cursor: pointer;
-            }
-            .topright {
-                position: absolute;
-                top: 8px;
-                right: 16px;
-                font-size: 18px;
-            }
-        </style>
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .slidecontainer {
+            width: 100%;
+            /* Width of the outside container */
+        }
 
-    <body>      
-        <!-- Brand Start -->
-        <div class="brand">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-4">
-                        <div class="b-logo">
-                            <a href="index.html">
-                                <img src="img/logo.png" alt="Logo" style="width:500px;height:300px;">
-                            </a>
-                        </div>
+        /* The slider itself */
+        .slider {
+            -webkit-appearance: none;
+            /* Override default CSS styles */
+            appearance: none;
+            margin-top: 0px;
+            width: 95%;
+            /* Full-width */
+            height: 25px;
+            /* Specified height */
+            background: rgb(75, 116, 219);
+            /* Grey background */
+            opacity: 0.7;
+            /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s;
+            /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 35px;
+            background: #c8cc61;
+            cursor: pointer;
+        }
+
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Brand Start -->
+    <div class="brand">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4">
+                    <div class="b-logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo" style="width:500px;height:300px;">
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-4">
-                        <div class="b-search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="b-search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Brand End -->
+    </div>
+    <!-- Brand End -->
 
-        <!-- Nav Bar Start -->
-        <div class="nav-bar">
-            <div class="container">
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <!--div class="nav-item dropdown">
+    <!-- Nav Bar Start -->
+    <div class="nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <!--div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
                                 <div class="dropdown-menu">
                                     <a href="#" class="dropdown-item">Sub Item 1</a>
                                     <a href="#" class="dropdown-item">Sub Item 2</a>
                                 </div>
                             </div-->
-                            <a href="about.html" class="nav-item nav-link">About Us</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                        </div>
-                        <div class="social ml-auto">
-                            <a href="https://www.facebook.com/" target = "_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/" target = "_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/" target = "_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
+                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                </nav>
-            </div>
+                    <div class="social ml-auto">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <!-- Nav Bar End -->
+    </div>
+    <!-- Nav Bar End -->
 
-        <!-- Top News Start-->
-        <div class="top-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5" style = "margin: -17px">  
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp; Left  &nbsp;&nbsp;&nbsp;  Left-Leaning  &nbsp;&nbsp;&nbsp;  Neutral  &nbsp;&nbsp;  Right-leaning  &nbsp;&nbsp;  Right </p>
-                    </div>
-                    <div class="col-lg-7">
-                        <p></p>
-                    </div>
-                    <!-- Slider -->
-                    <div class = "col-lg-5">
-                        <div class="slidecontainer">
-                            <input type="range" id="sliderRating" min="1" max="5" value="3" class="slider">
+    <!-- Top News Start-->
+    <div class="top-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" style="margin-top: -10px; margin-left: -17px; margin-bottom: -30px; text-align: center" >
+                    <p style="text-align: center;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Left &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                        Left-Leaning &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Neutral &nbsp&nbsp&nbsp&nbsp&nbsp
+                        Right-Leaning &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Right &nbsp&nbsp&nbsp
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                </div>
+                <div class="col-lg-6" style="margin-top: 5px; font-size: 17px; text-align:center;">
+                    <input type="range" id="sliderRating" min="1" max="5" value="3" class="slider"
+                        onchange="getArticles1(sliderRating.value, 'News', '1') 
+                        + getArticles2(sliderRating.value, 'News', '2')
+                        + getArticles3(sliderRating.value, 'News', '3') 
+                        + getArticles4(sliderRating.value, 'News', '4')
+                        + getArticles5(sliderRating.value, 'News', '5') 
+                        + getArticles6(sliderRating.value, 'News', '6')
+                        + getArticles7(sliderRating.value, 'Science', '1')
+                        + getArticles8(sliderRating.value, 'Science', '2')
+                        + getArticles9(sliderRating.value, 'Science', '3')
+                        + getArticles10(sliderRating.value, 'Tech', '1')
+                        + getArticles11(sliderRating.value, 'Tech', '2')
+                        + getArticles12(sliderRating.value, 'Tech', '3')
+                        + getArticles13(sliderRating.value, 'Business', '1')
+                        + getArticles14(sliderRating.value, 'Business', '2')
+                        + getArticles15(sliderRating.value, 'Business', '3')
+                        + getArticles16(sliderRating.value, 'Politics', '1')
+                        + getArticles17(sliderRating.value, 'Politics', '2')
+                        + getArticles18(sliderRating.value, 'Politics', '3')">
+                </div>
+                <div class="col-lg-6" style="margin-top: -32px; font-size: 17px;">
+                    <p>
+                        What political affiliation of news do you typically read? (Remember, articles will not match
+                        your choice as to show you new perspectives.)
+                    </p>
+                </div>
+                <div class="col-md-6 tn-left">
+                    <div class="row tn-slider">
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <!-- <img src="img/news-450x350-1.jpg" /> -->
+                                <img id="imageElement" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement" href="" textContent=""></a>
+                                </div>
+
+                                <script>
+                                    const API_KEY = "8cf84c91d2a14e8aa5433938f91f1b56";
+                                    const map = new Map();
+                                    map.set("5", "msnbc.com, vox.com");
+                                    map.set("4", "cnn.com, npr.org");
+                                    map.set("3", "forbes.com, wsj.com");
+                                    map.set("2", "nypost.com, washingtonexaminer.com")
+                                    map.set("1", "foxnews.com, thefederalist.com")
+
+                                    async function getArticles1(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
+
+                            </div>
                         </div>
-                        <p></p>
-                    </div>
-                    <div class="col-lg-7" style = "margin-top: -30px; font-size: 17px;">
-                        <p>
-                            What political affiliation of news do you typically read? (Remember, articles will not match your choice as to show you new perspectives.)
-                        </p>
-                    </div>
-                    
-                    <div class="col-md-6 tn-left">
-                        <div class="row tn-slider">
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <!-- <img src="img/news-450x350-1.jpg" /> -->
-                                    <img src="https://static.independent.co.uk/2021/08/11/16/newFile-12.jpg" />
-                                    <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img id="imageElement2" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement2" href="" textContent=""></a>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-450x350-2.jpg" />
-                                    <div class="tn-title">
-                                        <a  href="">Integer hendrerit elit eget purus sodales maximus</a>
-                                    </div>
-                                </div>
+
+                                <script>
+                                    async function getArticles2(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement2');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement2');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement2');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 tn-right">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                </div>
+                <div class="col-md-6 tn-right">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img id="imageElement3" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement3" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles3(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement3');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement3');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement3');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img id="imageElement4" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement4" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles4(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement4');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement4');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement4');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img id="imageElement5" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement5" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles5(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement5');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement5');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement5');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img id="imageElement6" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement6" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles6(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement6');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement6');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement6');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Top News End-->
+    </div>
+    <!-- Top News End-->
 
-        <!-- Category News Start-->
-        <div class="cat-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Sports</h2>
-                        <div class="row cn-slider">
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+    <!-- Category News Start-->
+    <div class="cat-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Science</h2>
+                    <div class="row cn-slider">
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement7" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement7" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles7(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement7');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement7');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement7');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement8" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement8" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles8(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement8');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement8');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement8');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement9" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement9" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles9(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement9');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement9');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement9');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2>Technology</h2>
-                        <div class="row cn-slider">
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Technology</h2>
+                    <div class="row cn-slider">
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement10" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement10" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles10(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement10');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement10');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement10');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-5.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement11" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement11" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles11(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement11');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement11');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement11');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement12" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement12" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles12(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement12');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement12');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement12');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Category News End-->
+    </div>
+    <!-- Category News End-->
 
-        <!-- Category News Start-->
-        <div class="cat-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Business</h2>
-                        <div class="row cn-slider">
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-5.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+    <!-- Category News Start-->
+    <div class="cat-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Business</h2>
+                    <div class="row cn-slider">
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement13" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement13" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles13(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement13');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement13');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement13');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement14" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement14" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles14(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement14');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement14');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement14');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement15" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement15" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles15(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement15');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement15');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement15');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2>Entertainment</h2>
-                        <div class="row cn-slider">
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Politics</h2>
+                    <div class="row cn-slider">
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement16" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement16" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles16(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement16');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement16');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement16');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement17" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement17" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles17(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement17');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement17');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement17');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
-                            <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cn-img">
+                                <img id="imageElement18" src="" alt="API Image"></img>
+
+                                <!-- <embed src = "" alt = "" type = "image/jpeg"> -->
+                                <div class="tn-title">
+                                    <a id="urlElement18" href="" textContent=""></a>
                                 </div>
+
+                                <script>
+                                    async function getArticles18(rating, keyWord, page) {
+                                        var url =
+                                            "https://newsapi.org/v2/everything?" +
+                                            "domains=" +
+                                            map.get(rating) +
+                                            "&pageSize=1" +
+                                            "&sortBy=relevancy" +
+                                            //'&from=' + yyyy + '-' + mm + '-' + dd +
+                                            "&q=" +
+                                            keyWord +
+                                            "&page=" +
+                                            page +
+                                            "&apiKey=" +
+                                            API_KEY;
+
+                                        var req = new Request(url);
+
+                                        const response = await fetch(req);
+
+                                        const data = await response.json();
+
+                                        if (data.articles && data.articles.length > 0) {
+                                            const articleUrlImg = data.articles.map((article) => article['urlToImage']);
+                                            const imageElement = document.getElementById('imageElement18');
+                                            imageElement.src = articleUrlImg[0];
+
+                                            const articleUrls = data.articles.map((article) => article['url']);
+                                            const urlElement = document.getElementById('urlElement18');
+                                            urlElement.href = articleUrls[0];
+
+                                            const articleTitles = data.articles.map((article) => article['title']);
+                                            const textElement = document.getElementById('urlElement18');
+                                            textElement.textContent = articleTitles[0];
+                                        } else {
+                                            return [];
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Category News End-->
-        
-        <!-- Tab News Start-->
-        <div class="tab-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="nav nav-pills nav-justified">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#featured">Featured News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#popular">Popular News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#latest">Latest News</a>
-                            </li>
+    </div>
+    <!-- Category News End-->
+
+    <!-- Tab News Start-->
+    <div class="tab-news">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+    <!-- Tab News Start-->
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Get in Touch</h3>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>1338 5th Street, Seattle, WA, USA</p>
+                            <p><i class="fa fa-envelope"></i>info@biasbusternews.com</p>
+                            <p><i class="fa fa-phone"></i>+1 206 315 6489</p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Pellentesque</a></li>
+                            <li><a href="#">Aenean vulputate</a></li>
+                            <li><a href="#">Vestibulum sit amet</a></li>
+                            <li><a href="#">Nam dignissim</a></li>
                         </ul>
-
-                        <div class="tab-content">
-                            <div id="featured" class="container tab-pane active">
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="popular" class="container tab-pane fade">
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="latest" class="container tab-pane fade">
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    
-                    <div class="col-md-6">
-                        <ul class="nav nav-pills nav-justified">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#m-viewed">Most Viewed</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#m-read">Most Read</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#m-recent">Most Recent</a>
-                            </li>
-                        </ul>
+                </div>
 
-                        <div class="tab-content">
-                            <div id="m-viewed" class="container tab-pane active">
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="m-read" class="container tab-pane fade">
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="m-recent" class="container tab-pane fade">
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                                <div class="tn-news">
-                                    <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
-                                    </div>
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit amet</a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Newsletter</h3>
+                        <div class="newsletter">
+                            <p>
+                                Enter your email below for access to our weekly bias buster newsletter.
+                            </p>
+                            <form>
+                                <input class="form-control" type="email" placeholder="Your email here">
+                                <button class="btn">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Tab News Start-->
+    </div>
+    <!-- Footer End -->
 
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Get in Touch</h3>
-                            <div class="contact-info">
-                                <p><i class="fa fa-map-marker"></i>1338 5th Street, Seattle, WA, USA</p>
-                                <p><i class="fa fa-envelope"></i>info@biasbusternews.com</p>
-                                <p><i class="fa fa-phone"></i>+1 206 315 6489</p>
-                                <div class="social">
-                                    <a href="https://www.facebook.com/" target = "_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/" target = "_blank"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.youtube.com/" target = "_blank"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Footer Menu Start -->
+    <div class="footer-menu">
+        <div class="container">
+            <div class="f-menu">
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Accessibility help</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Menu End -->
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Quick Links</h3>
-                            <ul>
-                                <li><a href="#">Lorem ipsum</a></li>
-                                <li><a href="#">Pellentesque</a></li>
-                                <li><a href="#">Aenean vulputate</a></li>
-                                <li><a href="#">Vestibulum sit amet</a></li>
-                                <li><a href="#">Nam dignissim</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Newsletter</h3>
-                            <div class="newsletter">
-                                <p>
-                                    Enter your email below for access to our weekly bias buster newsletter.
-                                </p>
-                                <form>
-                                    <input class="form-control" type="email" placeholder="Your email here">
-                                    <button class="btn">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Developed by Isayiah Lim, Dixon Tan, Shreya Pandey, and Vernon Lumpkin for DubHacks 2023.</p>
+                </div>
+
+                <div class="col-md-6 template-by">
+                    <p>Template provided by <a href="https://htmlcodex.com">HTML Codex</a></p>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Footer Menu Start -->
-        <div class="footer-menu">
-            <div class="container">
-                <div class="f-menu">
-                    <a href="">Terms of use</a>
-                    <a href="">Privacy policy</a>
-                    <a href="">Accessibility help</a>
-                    <a href="contact.html">Contact us</a>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Menu End -->
+    </div>
+    <!-- Footer Bottom End -->
 
-        <!-- Footer Bottom Start -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 copyright">
-                        <p>Developed by Isayiah Lim, Dixon Tan, Shreya Pandey, and Vernon Lumpkin for DubHacks 2023.</p>
-                    </div>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-                    <div class="col-md-6 template-by">
-                        <p>Template provided by <a href="https://htmlcodex.com">HTML Codex</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Bottom End -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
 
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
 </html>
