@@ -200,10 +200,6 @@ button.btn:hover {
     max-height: 60px;
 }
 
-.brand .b-ads {
-    overflow: hidden;
-}
-
 .brand .b-ads a img {
     max-width: 100%;
     max-height: 100%;
@@ -376,6 +372,24 @@ button.btn:hover {
 /**********************************/
 /********** Top News CSS **********/
 /**********************************/
+/* .top-news {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 0 0;
+}
+
+.top-news .tn-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-news .tn-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+} */
+
 .top-news {
     position: relative;
     width: 100%;
@@ -388,7 +402,10 @@ button.btn:hover {
 }
 
 .top-news .tn-img img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .top-news .tn-img:hover img {
