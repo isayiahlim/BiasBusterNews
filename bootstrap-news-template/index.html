@@ -19,6 +19,38 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            .slidecontainer {
+                width: 100%; /* Width of the outside container */
+            }
+
+            /* The slider itself */
+            .slider {
+                -webkit-appearance: none;  /* Override default CSS styles */
+                appearance: none;
+                margin-top: 0px;
+                width: 95%; /* Full-width */
+                height: 25px; /* Specified height */
+                background: rgb(75, 116, 219); /* Grey background */
+                opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+                -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+                transition: opacity .2s;
+            }
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 35px;
+                background: #c8cc61;
+                cursor: pointer;
+            }
+            .topright {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                font-size: 18px;
+            }
+        </style>
     </head>
 
     <body>      
@@ -62,7 +94,7 @@
                                     <a href="#" class="dropdown-item">Sub Item 2</a>
                                 </div>
                             </div-->
-                            <!-- a href="single-page.html" class="nav-item nav-link">Single Page</a -->
+                            <a href="about.html" class="nav-item nav-link">About Us</a>
                             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                         </div>
                         <div class="social ml-auto">
@@ -76,9 +108,29 @@
         </div>
         <!-- Nav Bar End -->
 
+        <!-- Top News Start-->
         <div class="top-news">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-5" style = "margin: -17px">  
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp; Left  &nbsp;&nbsp;&nbsp;  Left-Leaning  &nbsp;&nbsp;&nbsp;  Neutral  &nbsp;&nbsp;  Right-leaning  &nbsp;&nbsp;  Right </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <p></p>
+                    </div>
+                    <!-- Slider -->
+                    <div class = "col-lg-5">
+                        <div class="slidecontainer">
+                            <input type="range" id="sliderRating" min="1" max="5" value="3" class="slider">
+                        </div>
+                        <p></p>
+                    </div>
+                    <div class="col-lg-7" style = "margin-top: -30px; font-size: 17px;">
+                        <p>
+                            What political affiliation of news do you typically read? (Remember, articles will not match your choice as to show you new perspectives.)
+                        </p>
+                    </div>
+                    
                     <div class="col-md-6 tn-left">
                         <div class="row tn-slider">
                             <div class="col-md-6">
@@ -565,6 +617,6 @@
         <script src="lib/slick/slick.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>        
+        <script src="js/main.js"></script>
     </body>
 </html>
