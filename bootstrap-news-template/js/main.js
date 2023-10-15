@@ -1,11 +1,13 @@
 const API_KEY = "6ce8b0afed704347b0d603cdc9db3e14";
+const map = new Map();
+map.set("-2", "msnbc.com, vox.com");
 
 let articles;
-async function getArticles(databases, keyWord, returnType, page) {
+async function getArticles(rating, keyWord, returnType, page) {
   var url =
     "https://newsapi.org/v2/everything?" +
     "domains=" +
-    databases +
+    map.get(rating) +
     "&pageSize=20" +
     "&sortBy=relevancy" +
     //'&from=' + yyyy + '-' + mm + '-' + dd +
@@ -155,5 +157,7 @@ async function getArticles(databases, keyWord, returnType, page) {
             }
         ]
     });
+    let articles = getArticles("-2", "science", "url", 1);
+    console.log(articles);
 })(jQuery);
 
