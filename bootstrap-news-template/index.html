@@ -122,13 +122,17 @@
     <div class="top-news">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5" style="margin: -17px">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp; Left &nbsp;&nbsp;&nbsp; Left-Leaning &nbsp;&nbsp;&nbsp; Neutral
-                        &nbsp;&nbsp; Right-leaning &nbsp;&nbsp; Right </p>
+                <div class="col-lg-6" style="margin-top: -10px; margin-left: -17px; margin-bottom: -30px; text-align: center" >
+                    <p style="text-align: center;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Left &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                        Left-Leaning &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Neutral &nbsp&nbsp&nbsp&nbsp&nbsp
+                        Right-Leaning &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Right &nbsp&nbsp&nbsp
+                    </p>
                 </div>
                 <div class="col-lg-7">
                 </div>
-                <div class="col-lg-5" style="margin-top: 10px; font-size: 17px;">
+                <div class="col-lg-6" style="margin-top: 5px; font-size: 17px; text-align:center;">
                     <input type="range" id="sliderRating" min="1" max="5" value="3" class="slider"
                         onchange="getArticles1(sliderRating.value, 'News', '1') 
                         + getArticles2(sliderRating.value, 'News', '2')
@@ -149,7 +153,7 @@
                         + getArticles14(sliderRating.value, 'Politics', '2')
                         + getArticles14(sliderRating.value, 'Politics', '3')">
                 </div>
-                <div class="col-lg-7" style="margin-top: -20px; font-size: 18px;">
+                <div class="col-lg-6" style="margin-top: -32px; font-size: 17px;">
                     <p>
                         What political affiliation of news do you typically read? (Remember, articles will not match
                         your choice as to show you new perspectives.)
@@ -168,7 +172,7 @@
                                 </div>
 
                                 <script>
-                                    const API_KEY = "48c6cfb7a26945a1a249d8a8b73e7fa1";
+                                    const API_KEY = "8cf84c91d2a14e8aa5433938f91f1b56";
                                     const map = new Map();
                                     map.set("5", "msnbc.com, vox.com");
                                     map.set("4", "cnn.com, npr.org");
@@ -1120,195 +1124,7 @@
     <div class="tab-news">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <ul class="nav nav-pills nav-justified">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#featured">Featured News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#popular">Popular News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#latest">Latest News</a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div id="featured" class="container tab-pane active">
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="popular" class="container tab-pane fade">
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-5.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="latest" class="container tab-pane fade">
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <ul class="nav nav-pills nav-justified">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#m-viewed">Most Viewed</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#m-read">Most Read</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#m-recent">Most Recent</a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div id="m-viewed" class="container tab-pane active">
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-5.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="m-read" class="container tab-pane fade">
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="m-recent" class="container tab-pane fade">
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-5.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                            <div class="tn-news">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                </div>
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
